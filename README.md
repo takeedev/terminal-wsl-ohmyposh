@@ -21,3 +21,23 @@ chsh -s $(which zsh)
 ```shell
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
+
+## set oh-my-posh
+```shell
+vim ~/.zshrc
+export PATH="$HOME/.local/bin:$PATH"
+eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/M365Princess.omp.json')"
+source ~/.zshrc
+oh-my-posh --version
+```
+
+## Install highlighting 
+```shell
+sudo apt install zsh-autosuggestions zsh-syntax-highlighting
+# autosuggest
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# syntax highlight
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+```
