@@ -41,3 +41,11 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ```
+
+## Install mise en place 
+```shell
+curl https://mise.run | sh
+echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
+source ~/.zshrc
+mise --version
+```
